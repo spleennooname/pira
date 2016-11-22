@@ -1,0 +1,23 @@
+{
+  "name": "pira",
+  "version": "1.0.0",
+  "description": "spleennooname - pira",
+  "main": "entry.js",
+  "scripts": {
+    "build": "build",
+    "pack": "webpack --config webpack.config.js -p --display-reasons --display-modules"
+  },
+  "repository": {},
+  "keywords": [],
+  "author": "spleen666@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^0.25.0",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "jshint": "^2.9.4",
+    "jshint-loader": "^0.8.3",
+    "style-loader": "^0.13.1",
+    "uglify-js-plugin": "0.0.5",
+    "webpack": "^1.13.3"
+  }
+}
