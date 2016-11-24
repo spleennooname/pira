@@ -7,7 +7,7 @@ img::selection,
 img::-moz-selection
 {
     background: rgba(0, 0, 0, .3);
-}
+  }
 
 :focus
 {
@@ -27,17 +27,11 @@ img::-moz-selection
 
     border: 0;
 
-    -webkit-tap-highlight-color: rgba(255, 255, 255, .3);
+    -webkit-tap-highlight-color: rgba(255, 255, 255, .25);
     -webkit-touch-callout: none;
        -moz-touch-callout: none;
         -ms-touch-callout: none;
 }
-
-div
-{
-    zoom: 1;
-}
-
 
 
 html
@@ -46,7 +40,9 @@ html
 
     -ms-content-zooming: none;
     -ms-touch-action: auto;
-    -webkit-font-smoothing: antialiased;
+
+
+
     -webkit-text-size-adjust: 100%;
        -moz-text-size-adjust: 100%;
         -ms-text-size-adjust: 100%;
@@ -66,7 +62,11 @@ body
     color: #333;
     background: black;
 
+    -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    font-kerning: auto;
+
 }
 
 .gpu
@@ -80,6 +80,8 @@ body
        -moz-backface-visibility: hidden;
         -ms-backface-visibility: hidden;
             backface-visibility: hidden;
+
+            will-change:transform;
 }
 
 .disable-hover,
@@ -553,6 +555,7 @@ html.tr-directwrite
 .links ul li a,
 a[class*='btn-']
 {
+    w
     text-shadow: 0 0 2px rgba(0, 0, 0, .3);
 }
 
@@ -720,14 +723,14 @@ h2 > sup
 
 .wf-inactive *
 {
-    font-family: 'Times New Roman', serif;
+    font-family: 'Arial', sans-serif;
 
     visibility: visible;
 }
 
 .wf-active *
 {
-    font-family: 'Forum', Serif;
+    font-family: 'Josefin Sans', Serif;
 
     visibility: visible;
 }
@@ -750,12 +753,4 @@ h2 > sup
 @viewport
 {
     width: device-width;
-}
-
-@media only screen and (max-width: 319px)
-{
-    html
-    {
-        font-size: 12px;
-    }
 }
