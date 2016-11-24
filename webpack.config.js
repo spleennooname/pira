@@ -1,6 +1,5 @@
 var path = require('path'),
 
-
 	rootPath = path.join(__dirname, '../', '../'),
 	ExtractTextPlugin = require("extract-text-webpack-plugin"),
 
