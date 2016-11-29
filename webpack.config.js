@@ -33,7 +33,6 @@ var path = require('path'),
 							//include: ['js/lib/TWGLDemo']
 			      }
 			    ],*/
-
 			loaders: [
 				{
 					test: /\.css$/,
@@ -43,7 +42,6 @@ var path = require('path'),
 		},
 
 		resolve: {
-
 			modulesDirectories: ["src/js", "node_modules", "src/css"],
 			extensions: ['', '.js', '.css'],
 			root: [path.join(__dirname, './src')],
